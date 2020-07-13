@@ -1,0 +1,329 @@
+body, html {
+    background:#fff;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.evdenceActivity{
+    width: 1200px;
+    height: 2067px;
+    background: #000;
+    margin:0 auto;
+    position: relative;
+}
+.evdenceActivity div{
+    width: 1200px;        
+}
+.evdenceActivity .second-module,
+.evdenceActivity .third-module,
+.evdenceActivity .fourth-module{
+    margin-bottom: 30px;
+}
+.evdenceActivity .first-module{        
+    height: 400px;
+    background: url(../images/1.png) no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+.evdenceActivity .first-module .span-one{
+    display: inline-block;
+    width:148px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background:rgba(255,216,0,1);
+    box-shadow:0px 1px 14px 0px rgba(0,0,0,0.04);
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    cursor: pointer;
+    margin:324px 29px 0 84px;
+}
+.evdenceActivity .first-module .span-two{
+    display: inline-block;
+    width:148px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background:linear-gradient(180deg,rgba(247,234,139,1) 0%,rgba(220,200,89,1) 100%);
+    border-radius:20px;
+    cursor: pointer;
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    margin-top: 324px;
+}
+.evdenceActivity .second-module{
+    height: 329px;
+    background: url(../images/2.png) no-repeat; 
+    background-size: cover;      
+}
+.evdenceActivity .third-module{
+    height: 504px;
+    background: url(../images/3.png) no-repeat;
+    background-size: cover;
+}
+.evdenceActivity .fourth-module{
+    height:260px;
+    background: url(../images/4.png) no-repeat; 
+    background-size: cover;
+}
+.evdenceActivity .fifth-module{
+    height:451px;
+    background: url(../images/5.png) no-repeat;
+    background-size: contain;
+}
+.evdenceActivity .fixed-module{
+    height: 223px;
+    width:114px;
+    position: fixed;
+    bottom:85px;
+    margin-left:1033px;
+    overflow: hidden;
+}
+.evdenceActivity .fixed-module .li-one{
+    width:114px;
+    height:128px;
+    background:rgba(246,246,246,1);
+    box-shadow:0px 2px 9px 0px rgba(0,0,0,0.5);
+    border-radius:4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.evdenceActivity .fixed-module .li-one .codeimg{
+    width:74px;
+    height: 74px;
+    margin:5px 0 2px;
+}
+.evdenceActivity .fixed-module .li-two{
+    width:114px;
+    height:80px;
+    background:rgba(246,246,246,1);
+    box-shadow:0px 2px 9px 0px rgba(0,0,0,0.5);
+    border-radius:4px;
+    text-align: center;
+    overflow: hidden;
+}
+.evdenceActivity .fixed-module .li-two .li-a{
+    display: inline-block;
+    width:94px;
+    height:33px;
+    line-height: 33px;
+    background:rgba(255,216,0,1);
+    box-shadow:0px 1px 14px 0px rgba(0,0,0,0.04);
+    border-radius:2px;
+    font-size:12px;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    text-align: center;
+    text-decoration: none;
+}
+.evdenceActivity .fixed-module .p12{
+    font-size:12px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:17px;
+    margin:0;
+}
+.generalframezz{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    z-index: 558;
+}
+.generalframezz .generalcontent{
+    background:#fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius:8px;
+    text-align: center;
+    overflow: hidden;
+}
+.generalframezz .generalcontent .imgStyle{
+    width:87px;
+    height: 92px;
+    margin:0px 223px;
+}
+.generalframezz .generalcontent .p16-modal{
+    font-size:16px;
+    font-weight:bold;
+    color:rgba(46,46,46,1);
+    line-height:22px;
+    margin-bottom: 10px;
+}
+.generalframezz .generalcontent .p14-modal{
+    font-size:14px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:20px;
+}
+.generalframezz .generalcontent .btn-modal{
+    width:149px;
+    height:38px;
+    line-height: 38px;
+    background:rgba(255,216,0,1);
+    box-shadow:0px 1px 14px 0px rgba(255,216,0,0.36);
+    border:0;
+    border-radius:100px;
+    cursor: pointer;
+    outline: none;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.generalframezz .generalcontent .bigImg{
+    width:245px;
+    height: 207px;
+}
+.generalframezz .generalcontent .smallImg{
+    position: absolute;
+    top:62px;
+    width:69px;
+    height: 146px;
+    left: 299px;
+}
+.generalframezz .generalcontent .positionimg{
+    width:42px;
+    height: 42px;
+    position: absolute;
+    top:119px;
+    left:312px;
+}
+.generalframezz .generalcontent .btn-modal-entry{
+    width:124px;
+    height:31px;
+    line-height: 31px;
+    border:0;
+    background:rgba(255,216,0,1);
+    border-radius:2px;
+    outline: none;
+    cursor: pointer;
+    font-size:12px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.generalframezz .generalcontent .closeImg{
+    width:18px;
+    height: 18px;
+    margin-top:10px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.generalframezz .widthonly{
+    width:335px;
+}
+/* .generalframezz .generalcontent p{
+    display: flex;
+} */
+.generalframezz .generalcontent .login-close{   
+    display: flex;
+    justify-content: flex-end;  
+}
+.generalframezz .generalcontent .imgstyle{
+    width: 18px;
+    height: 18px;
+    margin:10px 10px 0 0;
+    cursor: pointer;
+}
+.generalframezz .generalcontent .login-title{
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:20px;
+    margin:0 0 2px 25px;
+}
+.generalframezz .generalcontent .juimg{
+    width:28px;
+    height: 3px;
+    margin-left: 25px;
+}
+.generalframezz .generalcontent .login-group{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.generalframezz .generalcontent .login-phone,
+.generalframezz .generalcontent .input-group{
+    width:285px;
+    height:48px;
+    border:0;
+    background:rgba(250,250,250,1);
+    border-radius:4px;
+    outline: none;
+    text-indent: 15px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+}
+.generalframezz .generalcontent .login-password{
+    width: 235px;
+    height: 48px;
+    font-size: 14px;
+    border:0;
+    background: transparent;
+    outline: none;
+}
+.generalframezz .generalcontent .login-icon{
+    width:14px;
+    height: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.generalframezz .generalcontent  .login-code{
+    width:80px;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+    background: url(../images/code1.png) no-repeat center;
+    background-size: cover;
+    font-size:12px;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    text-indent: 0;
+    cursor: pointer;
+}
+.generalframezz .generalcontent .loginBtn{
+    width:285px;
+    height:40px;
+    background:rgba(255,216,0,1);
+    box-shadow:0 1px 14px 0 rgba(0,0,0,0.04);
+    border-radius:2px;
+    border:0;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px auto 10px;
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    cursor: pointer;
+}
+.generalframezz .generalcontent .pushbtn{
+    font-size:12px;
+    font-weight:400;
+    color:rgba(255,167,10,1);
+    line-height:17px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}

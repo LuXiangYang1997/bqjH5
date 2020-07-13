@@ -1,0 +1,349 @@
+body, html {
+    background: #1925A4;
+    position: relative;
+}
+
+.activity_box .header {
+    width: 100%;
+    height: 3.2rem;
+    background: url(../images/header_bg.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+
+.activity_box .main {
+    margin: -0.58rem auto 0;
+    box-sizing: border-box;
+}
+
+.main_box_icon{
+    width: 3.58rem;
+    height: 0.48rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.main .welfare_desc_box {
+    width: 3.37rem;
+    margin: -0.01rem auto;
+    background: url(../images/main_box.png) no-repeat left center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0.3rem 0.15rem 0.25rem;
+    /*margin-top: -0.35rem;*/
+}
+
+.welfare_desc_box .welfare_desc_box_item{
+    font-size: 0.14rem;
+    color: rgba(255,255,255,.8);
+    padding-top: 0.3rem;
+}
+
+.welfare_desc_box .welfare_desc_box_item:first-child{
+    padding-top: 0;
+}
+.welfare_desc_box_item .welfare_desc_box_item_title{
+    color: #FFD800;
+    font-weight: 500;
+    font-size: 0.14rem;
+    line-height: 1;
+}
+
+.welfare_desc_box_item .welfare_desc_box_item_title:before{
+    content: '';
+    display: inline-block;
+    width: 0.04rem;
+    height: 0.12rem;
+    background: #FFD800;
+    vertical-align: bottom;
+    margin-right: 0.05rem;
+    border-radius: 0.02rem;
+}
+
+.welfare_desc_box_item .welfare_desc_box_item_strong{
+    font-size:0.2rem;
+    font-weight:bold;
+    color:rgba(255,216,0,1);
+    line-height:0.30rem;
+}
+
+.welfare_desc_box_item .welfare_desc_box_item_content{
+    padding-left: 0.09rem;
+}
+
+
+
+
+.seven_day {
+    padding-top: 0.28rem;
+}
+
+
+
+
+/******************************推广福利说明*****************************/
+.main_welfare_box{
+    margin: 0.33rem auto 0;
+    border-radius:0.1rem;
+    border:0.01rem solid rgba(255,255,255,0.54);
+    font-size: 0.14rem;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main_welfare_box .welfare_table{
+    width: 100%;
+    height: 100%;
+}
+
+.welfare_table tr td:nth-child(1){
+    width: 0.48rem;
+    background:rgba(255,255,255,0.0408);
+    box-sizing: border-box;
+    height: 1.48rem;
+}
+
+.welfare_table tr td:nth-child(2){
+    width: 2.47rem;
+    box-sizing: border-box;
+    border-right: 0;
+    text-align: center;
+    line-height: 0.3rem;
+}
+
+.welfare_table tr{
+    border-bottom: 0.01rem solid rgba(255,255,255,.3);
+}
+
+.welfare_table tr:last-child{
+    border-bottom: 0;
+}
+
+.welfare_table td{
+    border-right: 0.01rem solid rgba(255,255,255,.3);
+}
+
+.welfare_table .welfare_table_title{
+    font-size:0.14rem;
+    font-weight:500;
+    color:rgba(255,216,0,1);
+    line-height:1.15;
+    padding: 0 0.16rem;
+}
+
+.welfare_table .welfare_table_strong{
+    font-size:0.20rem;
+    font-weight:bold;
+    color:rgba(255,216,0,1);
+    line-height:1;
+    vertical-align: text-bottom;
+}
+
+.welfare_table .welfare_table_yellow{
+    color:rgba(255,216,0,.8);
+}
+
+/******************************举个例子*****************************/
+.main_example{
+    padding-top: 0.3rem;
+}
+
+.main_example .main_example_box{
+    width: 3.37rem;
+    min-height: 3rem;
+    box-sizing: border-box;
+    padding: 0.18rem 0 0.2rem;
+    margin: -0.01rem auto;
+    background: url(../images/main_box.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+
+.main_example_box .example_box_example{
+    padding: 0 0.19rem 0 0.11rem;
+}
+
+.example_box_example .example_box_example_title{
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #FFD800;
+}
+
+.example_box_example .example_box_example_content{
+    font-size:0.14rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.30rem;
+    padding-top: 0.15rem;
+}
+
+.main_example_box .example_box_reward{
+    padding-top: 0.3rem;
+}
+
+.example_box_reward .example_box_reward_content{
+    font-size: 0.14rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 0.3rem;
+    padding: 0.15rem 0.10rem 0 0.15rem;
+}
+
+
+.example_box_reward .example_box_reward_title{
+    text-align: center;
+    font-size:0.22rem;
+    font-weight:800;
+    color:rgba(255,216,0,1);
+    line-height:1;
+    -webkit-text-stroke:0.01rem rgba(1,1,1,1);
+    text-stroke:0.01rem rgba(1,1,1,1);
+}
+
+/******************************好友专享 Plus 会员福利*****************************/
+.seven_day .vip_box {
+    width: 3.37rem;
+    min-height: 3.9rem;
+    box-sizing: border-box;
+    padding: 0.07rem 0.03rem 0.05rem;
+    margin: -0.01rem auto;
+    background: url(../images/main_box.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+
+.vip_box .vip_table {
+    height: 100%;
+    width: 100%;
+}
+
+.vip_table tr {
+    border-bottom: 0.01rem solid rgba(255,255,255,.3);
+}
+
+.vip_table tr:last-child {
+    border-bottom: 0;
+}
+
+.vip_table tr :nth-child(1) {
+    width: 2.43rem;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.vip_table tr :nth-child(2) {
+    width: 0.71rem;
+    box-sizing: border-box;
+    border-right: 0;
+}
+
+.vip_table tr th {
+    text-align: center;
+    padding: 0.13rem 0 0.13rem;
+    font-size: 0.14rem;
+    font-family: SourceHanSerifCN-Bold, SourceHanSerifCN;
+    font-weight: 500;
+    color: #FFD800;
+    line-height: 0.21rem;
+    /*-webkit-text-stroke:1px rgba(255,128,0,1);*/
+    text-stroke: 0.01rem rgba(255, 128, 0, 1);
+    border-right: 0.01rem solid rgba(255,255,255,.3);
+}
+
+.vip_table tr td {
+    padding: 0.1rem 0.06rem 0.1rem 0.1rem;
+    font-size: 0.13rem;
+    font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+    line-height: 0.19rem;
+    color: #fff;
+    border-right: 0.01rem solid rgba(255,255,255,.3);
+    font-weight: 400;
+}
+
+.vip_table tr td:nth-child(2) {
+    text-align: center;
+    padding-right: 0;
+}
+
+.vip_table .vip_table_td_title {
+    color: #FFD800;
+    font-family: SourceHanSerifCN-Bold, SourceHanSerifCN;
+    font-weight: 500;
+    font-size: 0.14rem;
+}
+
+.vip_table .vip_table_td_nowrap {
+    padding-right: 0;
+    white-space: nowrap;
+}
+
+.vip_table .vip_table_td_num{
+    font-size:0.14rem;
+    font-family:SourceHanSansCN-Medium,SourceHanSansCN;
+    font-weight:500;
+    color:#FFD800;
+    line-height:0.21rem;
+}
+
+
+/******************************推广大使活动规则说明*****************************/
+.main_rules{
+    padding-top: 0.28rem;
+}
+
+.main_rules .main_rules_box{
+    width: 3.37rem;
+    min-height: 7.2rem;
+    box-sizing: border-box;
+    padding: 0.23rem 0.15rem;
+    margin: -0.01rem auto 0;
+    background: url(../images/main_box.png) no-repeat left center;
+    background-size: 100% 100%;
+    font-size:0.12rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.26rem;
+}
+
+.main_rules_box .main_rules_box_indent{
+    text-indent: 0.15rem;
+}
+
+.activity_box .footer {
+    color: #fff;
+    font-size: 0.12rem;
+    text-align: center;
+    /*padding: 0.25rem 0 0.25rem 0.3rem;*/
+    /*height: 0.6rem;*/
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer .footer_text{
+    padding: 0.18rem 0 0.3rem;
+}
+
+.footer .footer_fixed {
+    width: 1.04rem;
+    height: 0.58rem;
+    display: block;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*z-index: 2;*/
+}
+
+.share{
+    position: fixed;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-left: -1.585rem;
+    width: 3.15rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    background: #FFD800;
+    border-radius: 0.2rem;
+    box-shadow:0 0.04rem 0.2rem 0 rgba(0,0,0,0.05);
+    color: #282828;
+    font-size: 0.16rem;
+}

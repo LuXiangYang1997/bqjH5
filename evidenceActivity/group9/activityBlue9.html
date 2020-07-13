@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="icon" href="./favicon.ico">
+    <title>取证</title>
+    <meta name="keywords"
+          content="版权服务,版权百科,版权,版权家,版权存证,版权交易,版权监测,版权维权,版权登记,版权公证,版权签名,数字版权,版全家,版权侵权取证,版权法律维权服务,区块链版权登记,区块链版权确权,区块链版权存证,区块链版权">
+    <meta name="description"
+          content="版权家,人人都是创作者，人人都是版权人。版权家秉持让版权实现更大价值的使命，使用创新的版权区块链和版权签名技术，为版权人提供极致的版权存证、版权交易、版权监测、版权维权服务体验。">
+    <link rel="stylesheet" href="./css/mobile_reset.css">
+    <link rel="stylesheet" href="./css/property_right_activity.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2ceb21e288024879ef2eced191a2da88";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div class="activity_box" style="background: #282194;">
+    <div class="header-two"></div>
+    <div class="time-tip-two"></div>
+    <div class="protect-two"></div>
+    <div class="new-person-two"></div>
+    <div class="new-one"></div>
+    <div class="new-two"></div>
+    <!-- 浏览器打开 -->
+    <div class="fixed-box" style="height:1.06rem;background:rgba(40,33,148,1);box-shadow:0rem -0.07rem 0.22rem 0rem rgba(0,21,96,0.3);" id="otherShow">
+        <p class="fixed-p user-p" style="display: none;">您好，<span id="userAccount"></span><span class="fixed-span" onclick="logout();">退出登录</span></p>
+        <p class="fixed-p no-p" style="display: block;">未登录，<span class="fixed-span" style="margin-left: 0;" onclick="showLoginModal();">立即登录</span></p>
+        <p style="display: flex;justify-content: center;">
+            <button class="fixed-leftbtn-two showgif" onclick="inviteFriend(2);" style="display: none;">邀请他人注册</button>
+            <button class="fixed-rightbtn-two receiveBtn" onclick="receiveGift(2)">领取注册礼包</button>
+        </p>
+    </div>
+
+    <!-- app内 -->
+    <div class="fixed-box" style="height:0.64rem;" id="appshow">       
+        <p style="display: flex;justify-content: center;margin-top:0.12rem;">
+            <button class="fixed-leftbtn-two showgif" id="giveUrl" style="display: none;">邀请他人注册</button>
+            <button class="fixed-rightbtn-two receiveBtn" id="giveGift">领取注册礼包</button>
+        </p>
+    </div>
+
+    <!-- 登录 注册 -->
+    <div class="generalframezz" id="bigModal" style="display: none;">
+        <div class="generalcontent widthonly" style="height:3.33rem;" id="modalLader">
+            <!-- 登录 -->
+            <div style="display: block;" id="login">
+                <p class="login-close"><img src="./images/close.png" class="imgstyle" onclick="closeModal();" /></p>
+                <p class="login-title">登录</p>
+                <p><img src="./images/ju.png" class="juimg" /></p>
+                <div class="login-group">
+                    <input type="text" placeholder="请输入手机号" class="login-phone" style="margin:0.25rem 0 0.15rem;" id="phoneLogin" maxlength="11" autocomplete="off" />
+                    <div class="input-group">
+                        <input type="password" placeholder="请输入密码" class="login-password" id="passwordOne" autocomplete="off" />
+                        <img src="./images/guan.png" class="login-icon" id="selectImg" />
+                    </div>
+                </div>
+                <button class="loginBtn" id="submitlogin">立即登录</button>
+                <p class="pushbtn" onclick="goRegister();">没有账号，去注册</p>
+            </div>
+
+             <!-- 注册 -->
+            <div style="display: none;" id="resigter">
+                <p class="login-close"><img src="./images/close.png" class="imgstyle" onclick="closeModal();" /></p>
+                <p class="login-title">注册</p>
+                <p><img src="./images/ju.png" class="juimg" /></p>
+                <div class="login-group">
+                    <input type="text" placeholder="请输入手机号" class="login-phone" style="margin:0.25rem 0 0.15rem;" id="phoneNum" maxlength="11" autocomplete="off" />
+                    <div class="input-group" style="margin-bottom: 0.15rem;">
+                        <input type="text" placeholder="请输入密码" class="login-password" style="width:1.75rem" id="codeNum" autocomplete="off" />
+                        <span class="login-code count_down_btn" id="sendCode" style="display: inline-block;">获取验证码</span>
+                        <span class="login-code count_down_show" id="sendCode" style="display: none;">60</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="请输入密码" class="login-password" id="passwordTwo" autocomplete="off" />
+                        <img src="./images/guan.png" class="login-icon" id="showImg" />
+                    </div>
+                </div>
+                <button class="loginBtn" id="mainBtn">立即注册</button>
+                <p class="pushbtn" onclick="goLogin();">已有账号，去登录</p>
+            </div>
+           
+        </div>       
+    </div>
+
+    <!-- 领取完成！ -->
+    <div class="generalframezz" style="display: none;" id="happyModal">
+        <div class="generalcontent" style="width:2.85rem;height:2.77rem;">
+            <img src="./images/two5.png" class="modal-img-two" />
+            <p class="p18">领取完成！</p>
+            <p class="p14">快去登录取证宝APP看看吧</p>
+            <button class="downBtn-two" id="gobower">下载取证宝APP</button>
+        </div>
+    </div>
+
+    <!-- 很遗憾！ -->
+    <div class="generalframezz" style="display: none;" id="sorryModal">
+        <div class="generalcontent" style="width:2.85rem;height:2.77rem;">
+            <img src="./images/two6.png" class="modal-img-two" style="margin-bottom: 0.03rem;"/>
+            <p class="p18">很遗憾！</p>
+            <p class="p14" style="margin:0.1rem 0 0.08rem;">您是老用户无法领取注册礼包</p>
+            <p class="p14" style="margin:0rem 0 0.31rem;">邀请其他用户注册成功，可获得邀请礼包</p>
+            <button class="downBtn-two" onclick="golink(2)">邀请他人注册</button>
+        </div>
+    </div>
+
+    <!-- 在浏览器打开 -->
+    <div class="generalframezz" style="display: none;" id="browserModal">
+        <div class="topbox">
+            <div style="height: 0.25rem;display: flex;align-items: center;margin:0.67rem 0.11rem 0rem 0.23rem;">
+                <img src="./images/1.png" class="img1" />
+                <span class="browerp">点击右上角的</span>
+                <img src="./images/dian.png" class="img2" />
+                <span class="browerp">按钮</span>
+            </div>
+            <div style="display: flex;">
+                <img src="./images/jian.png" class="img3" />
+            </div>
+        </div>
+        <div style="height: 0.25rem;display: flex;align-items: center;margin:0.28rem 0 0 0.51rem;">
+            <img src="./images/2.png" class="img1" />
+            <span class="browerp">选择</span>
+            <span class="browerp">“在浏览器中打开”</span>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/fontsizeset.js"></script>
+<script src="./js/js.cookie.js"></script>
+<script src="./js/property_right_activity.js"></script>
+<script>
+    //百度埋点
+    window.burialPoint = function burialPoint(type,op,value){
+        try{
+            _hmt.push(['_trackEvent', type, op, value, new Date().getTime()]);
+        }catch(e){
+            console.log(e)
+        }
+    }
+</script>
+</html>

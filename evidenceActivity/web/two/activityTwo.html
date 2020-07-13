@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="icon" href="./favicon.ico">
+    <title>取证宝</title>
+    <meta name="keywords"
+          content="版权服务,版权百科,版权,版权家,版权存证,版权交易,版权监测,版权维权,版权登记,版权公证,版权签名,数字版权,版全家,版权侵权取证,版权法律维权服务,区块链版权登记,区块链版权确权,区块链版权存证,区块链版权">
+    <meta name="description"
+          content="版权家,人人都是创作者，人人都是版权人。版权家秉持让版权实现更大价值的使命，使用创新的版权区块链和版权签名技术，为版权人提供极致的版权存证、版权交易、版权监测、版权维权服务体验。">
+    <link rel="stylesheet" href="./css/activity.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2ceb21e288024879ef2eced191a2da88";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>       
+</head>
+<body>
+<div>
+    <div class="evdenceActivity">
+        <div class="first-module">
+            <span class="span-one" onclick="inviteFriend()">邀请他人注册</span>
+            <span class="span-two" onclick="receiveGift()">领取注册礼包</span>
+        </div>
+        <div class="second-module"></div>
+        <div class="third-module"></div>
+        <div class="fourth-module"></div>
+        <div class="fifth-module"></div>
+        <ul class="fixed-module">
+            <li class="li-one">
+                <p class="p12">取证宝APP</p>
+                <img src="./images/code.png" class="codeimg" />
+                <p class="p12" style="font-weight:bold;">扫码下载</p>
+            </li>
+            <li class="li-two">
+                <p class="p12" style=" margin:5px 0 10px;">取证宝网页版</p>
+                <a href="https://svip.bqj.cn/#/login?type=bqjquzheng" target="_blank" class="li-a">点此去取证</a>
+            </li>
+        </ul>       
+    </div>
+
+    <!-- 登录 注册 -->
+    <div class="generalframezz" id="bigModal" style="display: none;">
+        <div class="generalcontent widthonly" style="height:333px;" id="modalLader">
+            <!-- 登录 -->
+            <div style="display: block;" id="login">
+                <p class="login-close"><img src="./images/close.png" class="imgstyle" onclick="closeModal();" /></p>
+                <p class="login-title" style="text-align: left;">登录</p>
+                <p style="display: flex;"><img src="./images/ju.png" class="juimg" /></p>
+                <div class="login-group">
+                    <input type="text" placeholder="请输入手机号" class="login-phone" style="margin:25px 0 15px;" id="phoneLogin" maxlength="11" autocomplete="off" />
+                    <div class="input-group">
+                        <input type="password" placeholder="请输入密码" class="login-password" id="passwordOne" autocomplete="off" />
+                        <img src="./images/guan.png" class="login-icon" id="selectImg" />
+                    </div>
+                </div>
+                <button class="loginBtn" id="submitlogin">立即登录</button>
+                <p class="pushbtn" onclick="goRegister();">没有账号，去注册</p>
+            </div>
+
+             <!-- 注册 -->
+            <div style="display: none;" id="resigter">
+                <p class="login-close"><img src="./images/close.png" class="imgstyle" onclick="closeModal();" /></p>
+                <p class="login-title" style="text-align: left;">注册</p>
+                <p style="display: flex;"><img src="./images/ju.png" class="juimg" /></p>
+                <div class="login-group">
+                    <input type="text" placeholder="请输入手机号" class="login-phone" style="margin:25px 0 15px;" id="phoneNum" maxlength="11" autocomplete="off" />
+                    <div class="input-group" style="margin-bottom: 15px;">
+                        <input type="text" placeholder="请输入验证码" class="login-password" style="width:175px" id="codeNum" autocomplete="off" />
+                        <span class="login-code count_down_btn" id="sendCode" style="display: inline-block;">获取验证码</span>
+                        <span class="login-code count_down_show" id="sendCode" style="display: none;">60</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="请输入密码" class="login-password" id="passwordTwo" autocomplete="off" />
+                        <img src="./images/guan.png" class="login-icon" id="showImg" />
+                    </div>
+                </div>
+                <button class="loginBtn" id="mainBtn">立即注册</button>
+                <p class="pushbtn" onclick="goLogin()">已有账号，去登录</p>
+            </div>
+           
+        </div>       
+    </div>
+      
+    <!-- 老用户 -->
+    <div class="generalframezz" style="display: none;" id="sorryModal">
+        <div class="generalcontent" style="width:285px;height:277px;">
+            <img src="./images/no.png" class="imgStyle" style="margin:10px 0 4px;" />
+            <p class="p16-modal">很遗憾！</p>
+            <p class="p14-modal">您是老用户无法领取注册礼包</p>
+            <p class="p14-modal" style="margin:8px 0 31px">邀请其他用户注册成功，可获得邀请礼包</p>
+            <button class="btn-modal" onclick="showInvite()">邀请他人注册</button>
+        </div>
+    </div>
+          
+    <!-- 领取完成！ -->
+    <div class="generalframezz" style="display: none;" id="happyModal">
+        <div class="generalcontent" style="width:460px;height:499px;">
+            <img src="./images/close.png" class="closeImg" onclick="closeCha()" />
+            <img src="./images/yes.png" class="imgStyle" style="margin:0 186px" />
+            <p class="p16-modal">领取完成！</p>
+            <p class="p14-modal">快去登录取证宝APP看看吧</p>
+            <p style="position:relative;margin:25px 0;">
+                <img src="./images/big.png" class="bigImg" />
+                <img src="./images/small.png" class="smallImg" />
+                <img src="./images/code.png" class="positionimg" />
+            </p>
+            <p>
+                <button class="btn-modal-entry"><a href="https://svip.bqj.cn/" target="_blank" style="color:#333">进入取证宝网页版</a></button>
+                <button class="btn-modal-entry" style="background:rgba(248,248,248,1);margin-left:20px;cursor: default;">扫码下载APP</button>
+            </p>           
+        </div>
+    </div>
+
+    <!-- 邀请链接地址 -->
+    <div class="generalframezz" style="display: none;" id="linkModal">
+        <div class="generalcontent" style="width:534px;height:277px;">
+            <img src="./images/close.png" class="closeImg" onclick="closeLinkModal()" />
+            <img src="./images/link.png" class="imgStyle" />
+            <p class="p16-modal">邀请链接地址(请在手机上查看)</p>
+            <p class="p14-modal" style="margin-bottom:39px;" id="content"></p>
+            <button class="btn-modal" id="copyUrl" onclick="copyUrlFun()">点击复制</button>
+        </div>
+    </div>
+   
+</div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/js.cookie.js"></script>
+<script src="./js/clipboard.min.js"></script>
+<script src="./js/activity.js"></script>
+<script>
+    //百度埋点
+    window.burialPoint = function burialPoint(type,op,value){
+        try{
+            _hmt.push(['_trackEvent', type, op, value, new Date().getTime()]);
+        }catch(e){
+            console.log(e)
+        }
+    }
+</script>
+</html>

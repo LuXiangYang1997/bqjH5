@@ -1,0 +1,75 @@
+body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote，th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption, cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+capation,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:' '}
+abbr,acronym{border:0;}
+a{text-decoration: none;cursor: pointer;}
+
+
+
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:auto;margin-right:auto;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom: 1}
+*html .clearfix{height:1%}
+. Clearfix{display:block;}
+.vm{vertical-align:center;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute;right:0;}
+.zoom{zoom:1}
+.hidden{visibility:hidden;}
+.none{display:none;}
+button, input {
+    overflow: visible;
+}
+button, input, textarea {
+    border: none;
+    outline: none;
+}
+/*input {*/
+/*    border-width: 0;*/
+/*    padding: 0;*/
+/*    border-style: none;*/
+/*    font-family: Helvetica Neue For Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;*/
+/*    -webkit-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    padding: 4px 11px;*/
+/*    width: 100%;*/
+/*    height: 38px;*/
+/*    font-size: 14px;*/
+/*    line-height: 1.5;*/
+/*    color: rgba(0,0,0,.65);*/
+/*    background-color: #fff;*/
+/*    background-image: none;*/
+/*    border: 1px solid #d9d9d9;*/
+/*    border-radius: 6px;*/
+/*    -webkit-transition: all .3s;*/
+/*    -o-transition: all .3s;*/
+/*    transition: all .3s;*/
+/*    font-size: 14px;*/
+/*}*/
+/*input:focus {*/
+/*    outline: none;*/
+/*    -webkit-box-shadow: 0 0 0 2px rgba(74,82,114,.2);*/
+/*    box-shadow: 0 0 0 2px rgba(74,82,114,.2);*/
+/*}*/
+/*input:focus, input:hover {*/
+/*    border-color: #3d445e;*/
+/*}*/

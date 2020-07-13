@@ -1,0 +1,238 @@
+body, html {
+    background:rgba(238,245,219,1);
+    position: relative;
+}
+
+.activity_box .header {
+    width: 100%;
+    height: 4.2rem;
+    background: url(../images/header_bg.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+
+.activity_box .main {
+    width: 3.57rem;
+    height: 2.1rem;
+    background: url(../images/input_box.png) no-repeat left center;
+    background-size: 100% 100%;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+}
+
+.main .main_box {
+    padding: 0.59rem 0.29rem 0 0.33rem;
+}
+
+.main_box .phone_num {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 2.95rem;
+    height: 0.4rem;
+    padding: 0.12rem 0.17rem 0.11rem;
+    box-sizing: border-box;
+    border: 1px solid #F1B962;
+    border-radius: 0.2rem;
+    color: #F1B962;
+    font-size: 0.12rem;
+    -moz-appearance: button; /* Firefox */
+    -webkit-appearance: button; /* Safari 和 Chrome */
+}
+
+.phone_num::-webkit-input-placeholder {
+    color: #AD9267;
+}
+
+.phone_num:-moz-placeholder {
+    color: #AD9267;
+}
+
+.phone_num:-ms-input-placeholder {
+    color: #AD9267;
+}
+
+.main_box .main_btn {
+    text-align: center;
+    width: 2.95rem;
+    height: 0.4rem;
+    padding: 0.12rem 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 0.16rem;
+    font-weight: 500;
+    box-shadow:0 0 10px 0 rgba(241,185,98,0.12);
+    border-radius: 20px;
+    background: #F1B962;
+    margin-top: 0.3rem;
+    line-height: 1;
+}
+
+.seven_day {
+    padding-top: 0.34rem;
+}
+
+.seven_day .seven_day_icon {
+    width: 1.12rem;
+    height: 0.35rem;
+    display: block;
+    margin: 0 auto 0.1rem;
+    object-fit: contain;
+}
+
+.seven_day .vip_box {
+    width: 3.57rem;
+    min-height: 4.77rem;
+    box-sizing: border-box;
+    padding: 0.24rem 0.21rem 0.11rem;
+    margin: 0 auto;
+    background: url(../images/table_bg.png) no-repeat left center;
+    background-size: 100% 100%;
+}
+
+.vip_box .vip_table {
+    height: 100%;
+}
+
+.vip_table tr {
+    border-bottom: 0.01rem solid #78BD8F;
+}
+
+.vip_table tr:last-child {
+    border-bottom: 0;
+}
+
+.vip_table tr :nth-child(1) {
+    width: 2.43rem;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.vip_table tr :nth-child(2) {
+    width: 0.71rem;
+    box-sizing: border-box;
+    border-right: 0;
+}
+
+.vip_table tr th {
+    text-align: center;
+    padding: 0 0 0.12rem;
+    font-size: 0.12rem;
+    font-family: SourceHanSerifCN-Bold, SourceHanSerifCN;
+    font-weight: bold;
+    color:rgba(6,95,99,1);
+    line-height: 0.17rem;
+    /*-webkit-text-stroke:1px rgba(255,128,0,1);*/
+    text-stroke: 0.01rem rgba(255, 128, 0, 1);
+    border-right: 0.01rem solid #78BD8F;
+}
+
+.vip_table tr td {
+    padding: 0.1rem 0.06rem 0.1rem 0;
+    font-size: 0.13rem;
+    font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+    line-height: 0.19rem;
+    color: #0A6D72;
+    border-right: 0.01rem solid #78BD8F;
+    font-weight: 400;
+}
+
+.vip_table tr td:nth-child(2) {
+    text-align: center;
+    padding-right: 0;
+}
+
+.vip_table .vip_table_td_title {
+    color: #065F63;
+    font-family: SourceHanSerifCN-Bold, SourceHanSerifCN;
+    font-weight: bold;
+}
+
+.vip_table .vip_table_td_nowrap {
+    padding-right: 0;
+    white-space: nowrap;
+}
+
+.vip_table .vip_table_td_num{
+    color: #065F63;
+    font-weight:500;
+}
+
+.activity_box .activity_desc{
+    padding-top: 0.24rem;
+}
+
+.activity_desc .activity_desc_icon{
+    width: 1.6rem;
+    height: 0.35rem;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.activity_desc .activity_desc_main{
+    padding: 0.10rem 0.22rem 0 0.20rem;
+    font-size: 0.12rem;
+    color: #0A6D72;
+    line-height: 0.26rem;
+    font-family:SourceHanSansCN-Medium,SourceHanSansCN;
+    font-weight:500;
+}
+
+
+.activity_box .activity_about{
+    padding-top: 0.48rem;
+}
+
+.activity_about .activity_about_icon{
+    width: 1rem;
+    height: 0.37rem;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.activity_about .activity_about_main{
+    padding: 0.08rem 0.2rem 0 0.23rem;
+    font-size: 0.11rem;
+    color: #0A6D72;
+    font-weight: 500;
+    line-height: 0.20rem;
+
+}
+
+
+
+
+.activity_box .footer {
+    color: #AD9267;
+    font-size: 0.11rem;
+    text-align: center;
+    /*padding: 0.25rem 0 0.25rem 0.3rem;*/
+    /*height: 0.6rem;*/
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer .footer_text{
+    margin-top: 0.25rem;
+    margin-left: -0.2rem;
+}
+
+.footer .footer_fixed {
+    width: 1.04rem;
+    height: 0.58rem;
+    display: block;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*z-index: 2;*/
+}
+
+.nowrap{
+    white-space: nowrap
+}
+
+
+
+
